@@ -11,8 +11,6 @@ def hello():
 
 
 # to run -> flask --app hello run
-
-
 @app.route("/ping")
 def ping():
     return {"Message": "Why are you pinging me ?"}
@@ -20,6 +18,5 @@ def ping():
 
 if __name__ == "__main__":  # to run auto reloded server on code changes
     app.run(debug=True)
-
 # if you dont want to push this file into github use the following code
 # mlops_env/ --> add this into gitignore
